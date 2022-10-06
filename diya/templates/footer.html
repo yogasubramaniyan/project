@@ -1,0 +1,89 @@
+<!--FOOTER-->
+<section class="footer">
+{% for post in aboutus %} 
+  <div class="foote">
+    <div class="foot">
+      <div class="linn">
+       
+          <div class="fhead row">
+            <div class="menu col-sm">
+             <img class="logo-img" src="{{post.foot_logo.url}}" alt="LogoImage" />
+              <p class="text-light">{{ post.foot_cont }}</p>
+            </div>
+            <div class="QuickLinks col-sm">
+              <h3>{{post.qui_link}}</h3>
+              <ul class="list-style-none">
+                <li>
+                  <a href="#">{{post.qui_link1}}</a>
+                </li>
+                <li>
+                  <a href="#">{{post.qui_link2}}</a>
+                </li>
+                <li>
+                  <a href="#">{{post.qui_link3}} </a>
+                </li>
+                <li>
+                  <a href="#">{{post.qui_link4}} </a>
+                </li>
+                <li>
+                  <a href="#">{{post.qui_link5}} </a>
+                </li>
+                <li>
+                  <a href="#">{{post.qui_link6}} </a>
+                </li>
+				 <li>
+                  <a href="#">{{post.qui_link7}} </a>
+                </li>
+              </ul>
+            </div>
+            <div class="OurCourses col-sm">
+              <h3>{{post.cou_link}}</h3>
+              <ul class="list-style-none">
+                <li>
+                  <a href="#">{{post.cou_link1}} </a>
+                </li>
+                <li>
+                  <a href="#">{{post.cou_link2}}</a>
+                </li>
+                <li>
+                  <a href="#">{{post.cou_link3}}</a>
+                </li>
+                <li>
+                  <a href="#">{{post.cou_link4}} </a>
+                </li>
+                <li>
+                  <a href="#">{{post.cou_link5}}</a>
+                </li>
+            </div>
+			<div class="Location col-sm">
+			<h3>Location</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31096.018467720965!2d77.66510563180708!3d13.035524725166953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sDIYA%20COLLEGE%20OF%20NURSING%204%20s%20Avenue%2C%2028%20A%2C%20Rammurthy%20Nagar%20Road%2C%20NRI%20Layout%2C%20Kalkare%2C%20Bangalore%20%E2%80%93%20560042%2C%20Karnatka%20-India.!5e0!3m2!1sen!2suk!4v1663655493926!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		   </div>
+          </div>
+        </div>
+     
+     
+        
+		<div class="container">
+		<div class="ffoot d-flex">
+		  <div class="ffoot-copy">
+          <div class="foot-copy"><a href="#">{{post.copy}}</a></div>
+		  </div>
+		  <div class="ffoot-social">
+          <div class="d-flex foo-follow">
+		  <div class="ffoot-copy justify-content-sm-center">Follow Us on</div>
+            <div class="foo-social">
+			<a href="#"><img class="logo-img w-100%" src="{{post.ffoot_imag.url}}" alt="SocialImage" /></a>
+			<a href="#"><img class="logo-img w-100%" src="{{post.ffoot_imag1.url}}" alt="SocialImage" /></a>
+		    <a href="#"><img class="logo-img" src="{{post.ffoot_imag2.url}}" alt="SocialImage" /></a>
+			<a href="#"><img class="logo-img" src="{{post.ffoot_imag3.url}}" alt="SocialImage" /></a>	
+			<a href="#"><img class="logo-img" src="{{post.ffoot_imag4.url}}" alt="SocialImage" /></a>
+          </div>
+		  </div>
+        </div>
+      </div>
+    </div>
+	</div>
+  </div>
+  {% endfor %}
+</section>
